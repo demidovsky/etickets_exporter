@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height-fix">
+<head>
+{{> head}}
+</head>
+
+<body>
+    <header>
+        {{> nav}}
+    </header>
+
+    <!-- Main container-->
+    <div class="container">
+
+        <div class="divider-new pt-5">
+            <h2 class="h2-responsive wow fadeIn">
+            {{#success}} Exported files {{/success}}
+            {{^success}} Export failed {{/success}}
+            </h2>
+        </div>
+
+        <!--Section: Best features-->
+        <section id="best-features">
+
+            {{#success}}
+            <div class="row pt-3">
+
+                {{#filenames}}
+
+                <!--column-->
+                <div class="col-lg-4 mb-r">
+
+                    <!--Card-->
+                    <a class="card wow fadeIn" href="{{url}}">
+
+                        <!--Card image-->
+                        <!-- <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(25).jpg" alt="Card image cap"> -->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title text-center">
+                                <i class="fa fa-download"></i>
+                                PDF
+                            </h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">{{filename}}</p>
+                        </div>
+
+                    </a>
+                    <!--/.Card-->
+                </div>
+                <!--column-->
+
+                {{/filenames}}
+
+            </div>
+            {{/success}}
+
+            {{^success}}
+            <a href="/doit" class="btn btn-outline-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s" rel="nofollow">Try again</a>
+            {{/success}}
+
+        </section>
+        <!--/Section: Best features-->
+
+        <!-- <div class="divider-new">
+            <h2 class="h2-responsive wow fadeIn">Contact us</h2>
+        </div> -->
+
+        
+
+    </div>
+    <!--/ Main container-->
+
+    {{> footer}}
+
+</body>
+
+</html>

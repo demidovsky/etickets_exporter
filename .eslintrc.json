@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["promise"],
+  "extends": ["standard", "plugin:promise/recommended"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "no-console": "warn",
+    "func-names": 0,
+    "complexity": ["warn", 3],
+    "no-multiple-empty-lines": ["error", {"max": 2}],
+    "promise/avoid-new": "off",
+    "quote-props": ["error", "consistent"],
+    "no-plusplus": 0
+  }
+}
