@@ -1,0 +1,47 @@
+.flex-center {
+    color: #fff;
+}
+.intro-1 {
+    background: url("/img/bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+
+footer.page-footer {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+p {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+html.full-height-fix,
+html.full-height-fix body {
+  height: 100%;
+}
+
+html.full-height-fix .container {
+  min-height: 100%;
+}
+
+html.full-height-fix footer {
+  margin-top: -50px;
+}
+
+html.full-height-fix header + .container {
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+
+.card .card-body p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
