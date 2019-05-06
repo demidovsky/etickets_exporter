@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node app/app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,8 @@
     "express-session": "^1.15.6",
     "googleapis": "^23.0.0",
     "mustache": "^2.3.0",
-    "mustache-express": "^1.2.5"
+    "mustache-express": "^1.2.5",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "eslint": "^4.14.0",
@@ -25,5 +28,6 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1"
-  }
+  },
+  "snyk": true
 }
